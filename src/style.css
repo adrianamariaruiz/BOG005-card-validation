@@ -1,0 +1,165 @@
+header {
+    background-color: #13678A;
+    width: 100vw;
+    color: white;
+    font-size: 2rem;
+    padding: 20px;
+    text-align: center;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedorTotalPagar {
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.contenedorPrincipal {
+    background-color: #9AEBA3;
+    height: 80%;
+    width: 100vw;
+    padding: 40px 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pagar {
+    font-size: 16px;
+}
+
+.cardTajetaCredito {
+    background: linear-gradient(70deg, rgba(230, 214, 1, 0.815), white, rgb(255, 238, 0));
+    height: 200px;
+    width: 350px;
+    margin-top: 40px;
+    padding: 30px;
+    box-shadow: 3px 3px 15px 0px rgb(56, 56, 56);
+    border-radius: 15px;
+}
+
+.imagenTc {
+    text-align: right;
+    min-height: 30px;
+}
+
+.imagenTc img {
+    height: 100%;
+    width: 100%;
+    max-width: 60px;
+    object-fit: cover;
+}
+
+.chip img {
+    width: 100%;
+    max-width: 50px;
+    margin-bottom: 10px;
+}
+
+.titulo {
+    color: rgb(121, 121, 121);
+    font-size: 14px;
+    margin: 4px;
+}
+
+.cont-datos .numero,
+.cont-datos .nombre,
+.cont-datos .fechaVence {
+    font-size: 16px;
+    margin-top: 0px;
+}
+
+.grupo-nom-fv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tituloValidar {
+    font-size: 24px;
+}
+
+.formulario {
+    margin-top: 20px;
+    margin-left: 40px;
+    height: 400px;
+    width: 500px;
+    background-color: white;
+    box-shadow: 3px 3px 15px 0px rgb(56, 56, 56);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+input {
+    outline: none;
+    border-width: thin;
+    font-size: 16px;
+    height: 20px;
+    width: 100%;
+    max-width: 450px;
+    padding: 5px 12px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+input:hover {
+    border: 2px solid #13678A;
+}
+
+.selectFv {
+    display: flex;
+    flex-direction: row;
+}
+
+.selectFv select {
+    width: 100px;
+    border-width: thin;
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.selectFv select:focus {
+    outline: none;
+    border: 2px solid #13678A;
+}
+
+.div-boton-validar {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn-validar {
+    color: white;
+    border-radius: 4px;
+    border: none;
+    background-color: #13678A;
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+.btn-validar:hover {
+    background-color: #45C4B0;
+}
+
+footer {
+    background-color: #13678A;
+    width: 100vw;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+}

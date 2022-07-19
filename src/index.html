@@ -1,14 +1,106 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Tarjeta de crédito válida</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header>
+    Libreria
+  </header>
+
+  <main>
+
+    <div class="contenedorTotalPagar">
+      <div class="totalPagar">
+        <p>Total a pagar</p>
+        <p>$...</p>
+      </div>
+    </div>
+
+    <div class="contenedorPrincipal">
+      <div class="cardTajetaCredito">
+        <div class="imagenTc">
+          <img src="https://1000marcas.net/wp-content/uploads/2019/12/logo-VISA.png" alt="visaImg">
+        </div>
+
+        <div class="chip">
+          <img src="https://thumbs.dreamstime.com/z/tarjeta-de-cr%C3%A9dito-chip-isolated-110054752.jpg" alt="chipImg">
+        </div>
+
+        <div class="cont-datos">
+          <p class="titulo">Numero de Tarjeta</p>
+          <p class="numero" id="numeroTarjeta">################</p>
+        </div>
+
+        <div class="grupo-nom-fv">
+          <div class="cont-datos">
+            <p class="titulo">Nombre</p>
+            <p class="nombre" id="nombreTarjeta">Nombre propietario</p>
+          </div>
+          <div class="cont-datos">
+            <p class="titulo">FV</p>
+            <p class="fechaVence"> <span class="mes" id="mes">MM</span> / <span class="año" id="year">AA</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="formulario">
+        <label for="" class="tituloValidar">Validar datos de tarjeta</label>
+        <br>
+
+
+        <form action="" type="submit" id="formulario">
+          <!-- Nombre -->
+          <label for="">Nombre</label>
+          <input type="text" placeholder="Nombre" id="nombre">
+          <br>
+
+          <!-- Numero de Tarjeta -->
+          <label>Numero de tarjeta</label>
+          <input type="text" placeholder="Numero" id="numTarjeta" autocomplete="off" maxlength="19">
+          <br>
+          <span id="mensajeExito"></span>
+          <br>
+
+          <!-- Fecha de vencimiento -->
+          <div class="selectFv">
+            <div class="selectMes">
+              <label for="">Fecha de vencimiento</label>
+              <select name="mes" id="selectMes">
+                <option disabled selected>Mes</option>
+              </select>
+            </div>
+            <div class="selectYear">
+              <select name="year" id="selectYear">
+                <option disabled selected>Año</option>
+              </select>
+            </div>
+          </div>
+          <br>
+
+          <!-- Codigo -->
+          <label for="">CCV</label>
+          <input type="" placeholder="codigo" id="codigo">
+          <br>
+
+          <div class="div-boton-validar">
+            <button class="btn-validar" type="button" id="botonValidar">Validar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>2022</p>
+  </footer>
+
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>
