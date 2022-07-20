@@ -30,7 +30,6 @@ formulario.botonValidar.addEventListener('click', () => {
         const mensaje = document.getElementById('mensajeExito')
         mensaje.innerHTML = 'Su numero de tarjeta es valida'
         mensaje.style.color = 'green'
-        mensaje.style.fontSize = '16px'
 
         // enmascara el numero de la tarjeta en el input
         formulario.numTarjeta.value = validator.maskify(valorInput)
@@ -42,7 +41,6 @@ formulario.botonValidar.addEventListener('click', () => {
         const mensajeInvalida = document.getElementById('mensajeExito')
         mensajeInvalida.innerHTML = 'Su numero de tarjeta es invalida'
         mensajeInvalida.style.color = 'red'
-        mensajeInvalida.style.fontSize = '16px'
     }
 })
 

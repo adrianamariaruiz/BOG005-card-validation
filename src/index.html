@@ -62,9 +62,10 @@
 
           <!-- Numero de Tarjeta -->
           <label>Numero de tarjeta</label>
-          <input type="text" placeholder="Numero" id="numTarjeta" autocomplete="off" maxlength="19">
+          <input class="inputNumber" type="number" placeholder="Numero" id="numTarjeta" autocomplete="off"
+            maxlength="19">
           <br>
-          <span id="mensajeExito"></span>
+          <span id="mensajeExito" style="font-size: 16px;"></span>
           <br>
 
           <!-- Fecha de vencimiento -->
@@ -85,7 +86,7 @@
 
           <!-- Codigo -->
           <label for="">CCV</label>
-          <input type="" placeholder="codigo" id="codigo">
+          <input type="number" placeholder="codigo" maxlength="4" id="codigo">
           <br>
 
           <div class="div-boton-validar">
