@@ -1,13 +1,32 @@
-header {
-    background-color: #13678A;
+.cont-header {
+    height: auto;
     width: 100vw;
+    background-color: #13678A;
+    display: flex;
+}
+
+.cont-header img {
+    height: 100px;
+    width: auto;
+    margin: 10px 60px;
+    background-color: #9AEBA3;
+    padding: 20px 30px;
+    border-radius: 50%;
+}
+
+.cont-header img:hover {
+    cursor: pointer;
+}
+
+header {
     color: white;
-    font-size: 2rem;
-    padding: 20px;
-    text-align: center;
+    font-size: 3rem;
+    padding: 40px;
+    margin-left: 20%;
 }
 
 body {
+    background-color: #9AEBA3;
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -17,13 +36,12 @@ body {
 
 .contenedorTotalPagar {
     background-color: white;
-    text-align: center;
-    padding: 10px;
+    text-align: start;
+    padding: 10px 40px;
 }
 
 .contenedorPrincipal {
-    background-color: #9AEBA3;
-    height: 80%;
+    height: 100vh;
     width: 100vw;
     padding: 40px 20px;
     margin: auto;
@@ -31,6 +49,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
 .pagar {
@@ -166,6 +185,14 @@ footer {
     background-color: #13678A;
     width: 100vw;
     height: auto;
-    padding: 10px;
-    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+footer img {
+    height: 40px;
+    width: auto;
+    margin-right: 15px;
 }
