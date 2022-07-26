@@ -69,8 +69,6 @@ const escogerLibros = document.getElementById('escogerLibros')
 const tarjetaValidacion = document.getElementById('tarjetaValidacion')
 
 btnPagar.addEventListener('click', () => {
-    // console.log('funciona')
-
     escogerLibros.style.display = 'none'
     tarjetaValidacion.style.display = 'block'
 })
@@ -103,13 +101,11 @@ btnH4.addEventListener('click', () => {
 })
 
 
-
-
 // Para volver a la pagina inicial de la tienda
 const volverInicio = document.getElementById('inicio')
 
 volverInicio.addEventListener('click', () => {
-    escogerLibros.style.display = 'block'
+    escogerLibros.style.display = 'flex'
     tarjetaValidacion.style.display = 'none'
 })
 
