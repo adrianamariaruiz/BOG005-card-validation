@@ -2,6 +2,7 @@ import validator from './validator.js';
 
 // Interaccion con el DOM
 
+
 const formulario = document.getElementById('formulario')
 const mesExpira = document.getElementById('mes')
 const expYear = document.getElementById('year')
@@ -62,5 +63,54 @@ for (let i = actualYear; i <= actualYear + 8; i++) {
     formulario.selectYear.appendChild(opcion)
 }
 
+// boton pagar para abrir la tarjeta de credito y pagar
+const btnPagar = document.getElementById('btn-pagar')
+const escogerLibros = document.getElementById('escogerLibros')
+const tarjetaValidacion = document.getElementById('tarjetaValidacion')
+
+btnPagar.addEventListener('click', () => {
+    // console.log('funciona')
+
+    escogerLibros.style.display = 'none'
+    tarjetaValidacion.style.display = 'block'
+})
+
+// agregar libros al carrito (sidebar)
+const btnH1 = document.getElementById('btnH1')
+const btnH2 = document.getElementById('btnH2')
+const btnH3 = document.getElementById('btnH3')
+const btnH4 = document.getElementById('btnH4')
+const li1 = document.getElementById('li1')
+const li2 = document.getElementById('li2')
+const li3 = document.getElementById('li3')
+const li4 = document.getElementById('li4')
+const tituloLibro1 = document.getElementById('libro1').textContent
+const tituloLibro2 = document.getElementById('libro2').textContent
+const tituloLibro3 = document.getElementById('libro3').textContent
+const tituloLibro4 = document.getElementById('libro4').textContent
+
+btnH1.addEventListener('click', () => {
+    li1.innerHTML = tituloLibro1
+})
+btnH2.addEventListener('click', () => {
+    li2.innerHTML = tituloLibro2
+})
+btnH3.addEventListener('click', () => {
+    li3.innerHTML = tituloLibro3
+})
+btnH4.addEventListener('click', () => {
+    li4.innerHTML = tituloLibro4
+})
+
+
+
+
+// Para volver a la pagina inicial de la tienda
+const volverInicio = document.getElementById('inicio')
+
+volverInicio.addEventListener('click', () => {
+    escogerLibros.style.display = 'block'
+    tarjetaValidacion.style.display = 'none'
+})
 
 

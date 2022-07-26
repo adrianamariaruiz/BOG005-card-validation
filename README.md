@@ -22,7 +22,7 @@ Libreria Unica
 El proyecto se trata del desarrollo de una página web en la cual se ofrece el servicio de venta de libros con pago en línea por medio de tarjeta de crédito
 
 * La imagen final de tu proyecto.
-[![An old rock in the desert](/imagenes/boceto%20proyecto1.png)]
+[![boceto](/imagenes/boceto%20proyecto1.png)]
   
 * Agregar un resumen del feedback recibido indicando las mejoras a realizar.
 

@@ -9,95 +9,165 @@
 
 <body>
 
-  <div class="cont-header">
+
+  <header class="cont-header">
     <img src="https://cdn-icons-png.flaticon.com/512/29/29302.png" alt="logo Libreria">
-    <header>Libreria Unica</header>
-  </div>
+    <h1 class="header">Libreria Unica</h1>
+    <button class="inicio" id="inicio">Inicio</button>
+  </header>
+
 
   <main>
 
-    <div class="contenedorTotalPagar">
-      <div class="totalPagar">
+    <section class="EscogerLibros" id="escogerLibros">
+
+      <div class="sidebar">
+        <h1>Tus Productos</h1>
+        <div class="productosSeleccionados">
+          <ul>
+            <li id="li1"></li>
+            <li id="li2"></li>
+            <li id="li3"></li>
+            <li id="li4"></li>
+          </ul>
+        </div>
+        <p>Total a pagar:</p>
+        <p>$</p>
+        <button class="btn-pagar" id="btn-pagar">Pagar</button>
+      </div>
+
+      <div class="escoge-producto">
+
+        <div class="card-btn">
+          <div class="card">
+            <img
+              src="https://lavamagazine.com/wp-content/uploads/2020/05/resumen-de-Harry-Potter-y-la-Piedra-Filosofal-15.jpg"
+              alt="HP1">
+            <p id="libro1">Harry Potter y la piedra Filosofal</p>
+            <p id='precioHP1'>$ <span>60000</span></p>
+          </div>
+          <button class="btn-agregar" id="btnH1">Agregar</button>
+        </div>
+
+        <div class="card-btn">
+          <div class="card">
+            <img src="https://images.cdn2.buscalibre.com/fit-in/360x360/ab/5a/ab5ac580f1b394c11d372f03d14b52cd.jpg"
+              alt="HP2">
+            <p id="libro2">Harry Potter y la camara secreta</p>
+            <p id="precioHP2">$ <span>82000</span></p>
+          </div>
+          <button class="btn-agregar" id="btnH2">Agregar</button>
+        </div>
+
+        <div class="card-btn">
+          <div class="card">
+            <img src="https://images.cdn1.buscalibre.com/fit-in/360x360/90/db/90db9d40ad89d1f6302055a7d9b9d414.jpg"
+              alt="HP3">
+            <p id="libro3">Harry Potter y el prisionero de azkaban</p>
+            <p id='precioHP3'>$ <span>65000</span></p>
+          </div>
+          <button class="btn-agregar" id="btnH3">Agregar</button>
+        </div>
+
+        <div class="card-btn">
+          <div class="card">
+            <img src="https://images.cdn1.buscalibre.com/fit-in/360x360/95/14/9514318751bcb6e2716b7b77a8cb3e57.jpg"
+              alt="HP4">
+            <p id="libro4">Harry Potter y el caliz de fuego</p>
+            <p id='precioHP4'>$ <span>70000</span></p>
+          </div>
+          <button class="btn-agregar" id="btnH4">Agregar</button>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="tarjetaValidacion" id="tarjetaValidacion">
+      <div class="contenedorTotalPagar">
         <p>Total a pagar</p>
         <p>$...</p>
       </div>
-    </div>
 
-    <div class="contenedorPrincipal">
-      <div class="cardTajetaCredito">
-        <div class="imagenTc">
-          <img src="https://1000marcas.net/wp-content/uploads/2019/12/logo-VISA.png" alt="visaImg">
-        </div>
-
-        <div class="chip">
-          <img src="https://thumbs.dreamstime.com/z/tarjeta-de-cr%C3%A9dito-chip-isolated-110054752.jpg" alt="chipImg">
-        </div>
-
-        <div class="cont-datos">
-          <p class="titulo">Numero de Tarjeta</p>
-          <p class="numero" id="numeroTarjeta">################</p>
-        </div>
-
-        <div class="grupo-nom-fv">
-          <div class="cont-datos">
-            <p class="titulo">Nombre</p>
-            <p class="nombre" id="nombreTarjeta">Nombre propietario</p>
+      <div class="contenedorPrincipal">
+        <div class="cardTajetaCredito">
+          <div class="imagenTc">
+            <img src="https://1000marcas.net/wp-content/uploads/2019/12/logo-VISA.png" alt="visaImg">
           </div>
-          <div class="cont-datos">
-            <p class="titulo">FV</p>
-            <p class="fechaVence"> <span class="mes" id="mes">MM</span> / <span class="año" id="year">AA</span></p>
+
+          <div class="chip">
+            <img src="https://thumbs.dreamstime.com/z/tarjeta-de-cr%C3%A9dito-chip-isolated-110054752.jpg"
+              alt="chipImg">
           </div>
-        </div>
-      </div>
 
-      <div class="formulario">
-        <label for="" class="tituloValidar">Validar datos de tarjeta</label>
-        <br>
+          <div class="cont-datos">
+            <p class="titulo">Numero de Tarjeta</p>
+            <p class="numero" id="numeroTarjeta">################</p>
+          </div>
 
-
-        <form action="" type="submit" id="formulario">
-          <!-- Nombre -->
-          <label for="">Nombre</label>
-          <input type="text" placeholder="Nombre" id="nombre">
-          <br>
-
-          <!-- Numero de Tarjeta -->
-          <label>Numero de tarjeta</label>
-          <input class="inputNumber" type="text" placeholder="Numero" id="numTarjeta" autocomplete="off" maxlength="19">
-          <br>
-          <span id="mensajeExito" style="font-size: 16px;"></span>
-          <br>
-
-          <!-- Fecha de vencimiento -->
-          <div class="selectFv">
-            <div class="selectMes">
-              <label for="">Fecha de vencimiento</label>
-              <select name="mes" id="selectMes">
-                <option disabled selected>Mes</option>
-              </select>
+          <div class="grupo-nom-fv">
+            <div class="cont-datos">
+              <p class="titulo">Nombre</p>
+              <p class="nombre" id="nombreTarjeta">Nombre propietario</p>
             </div>
-            <div class="selectYear">
-              <select name="year" id="selectYear">
-                <option disabled selected>Año</option>
-              </select>
+            <div class="cont-datos">
+              <p class="titulo">FV</p>
+              <p class="fechaVence"> <span class="mes" id="mes">MM</span> / <span class="año" id="year">AA</span></p>
             </div>
           </div>
+        </div>
+
+        <div class="formulario">
+          <label for="" class="tituloValidar">Validar datos de tarjeta</label>
           <br>
 
-          <!-- Codigo -->
-          <label for="">CCV</label>
-          <input type="number" placeholder="codigo" maxlength="4" id="codigo">
-          <br>
 
-          <div class="div-boton-validar">
-            <button class="btn-validar" type="button" id="botonValidar">Validar</button>
-          </div>
-        </form>
+          <form action="" type="submit" id="formulario">
+            <!-- Nombre -->
+            <label for="">Nombre</label>
+            <input type="text" placeholder="Nombre" id="nombre">
+            <br>
+
+            <!-- Numero de Tarjeta -->
+            <label>Numero de tarjeta</label>
+            <input class="inputNumber" type="text" placeholder="Numero" id="numTarjeta" autocomplete="off"
+              maxlength="19">
+            <br>
+            <span id="mensajeExito" style="font-size: 16px;"></span>
+            <br>
+
+            <!-- Fecha de vencimiento -->
+            <div class="selectFv">
+              <div class="selectMes">
+                <label for="">Fecha de vencimiento</label>
+                <select name="mes" id="selectMes">
+                  <option disabled selected>Mes</option>
+                </select>
+              </div>
+              <div class="selectYear">
+                <select name="year" id="selectYear">
+                  <option disabled selected>Año</option>
+                </select>
+              </div>
+            </div>
+            <br>
+
+            <!-- Codigo -->
+            <label for="">CCV</label>
+            <input type="number" placeholder="codigo" maxlength="4" id="codigo">
+            <br>
+
+            <div class="div-boton-validar">
+              <button class="btn-validar" type="button" id="botonValidar">Validar</button>
+            </div>
+          </form>
+        </div>
       </div>
-    </div>
+    </section>
+
   </main>
 
   <footer>
+    <!-- <i class="fa-brands fa-facebook"></i> -->
     <img src="https://cdn-icons-png.flaticon.com/512/20/20673.png" alt="facebook">
     <img src="https://cdn.icon-icons.com/icons2/3161/PNG/512/instagram_social_media_network_icon_193321.png"
       alt="instagram">
