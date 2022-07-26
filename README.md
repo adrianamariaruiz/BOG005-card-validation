@@ -23,9 +23,8 @@ El proyecto se trata del desarrollo de una página web en la cual se ofrece el s
 
 * La imagen final de tu proyecto.
 [![boceto](/imagenes/boceto%20proyecto1.png)]
-  
-* Agregar un resumen del feedback recibido indicando las mejoras a realizar.
-
 
 * Imagen del prototipo final.
+[![boceto](/imagenes/pagInicioo.png)]
+[![boceto](/imagenes/pagPago.png)]
 
